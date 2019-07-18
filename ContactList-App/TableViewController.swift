@@ -9,7 +9,6 @@ import UIKit
 class TableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var array = [String]()
     
     var arrayUsers : [User]?
     
