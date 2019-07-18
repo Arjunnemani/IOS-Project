@@ -16,7 +16,7 @@ class TableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Get users random
+        //Api call  users random
         fetchUsers()
     }
     
@@ -33,7 +33,7 @@ class TableViewController: UIViewController {
     }
     
     func fetchUsers(){
-        var request = URLRequest(url: URL(string: "https://randomuser.me/api/?results=50&seed=nemani")!)
+        var request = URLRequest(url: URL(string: "https://randomuser.me/api/?results=50&seed=nemani")!)// Seed with my last name
         
         request.httpMethod = "GET"
         
